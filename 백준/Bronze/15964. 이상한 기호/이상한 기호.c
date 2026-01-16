@@ -1,15 +1,16 @@
 #include <stdio.h>
 
-int A, B;
+long long A, B;
+long long function(long long a, long long b);
 
 int main() {
 		
-	scanf("%d %d", &A, &B);
-	printf("%d",function(A, B));
+	scanf("%lld %lld", &A, &B);
+	printf("%lld",function(A, B));
 	
 	return 0;
 }
 
-int function(A, B) {
-	return (A + B) * (A - B);
+long long function(long long a, long long b) {
+	return (a + b) * (a - b);
 }
