@@ -8,8 +8,7 @@ int main() {
 	if (a >= b) small = b;
 	else small = a;
 
-	while (small>0) {
-		small--;
+	while (count<small) {
 		count++;
 		if (a % count == 0 && b % count == 0) num = count;
 	}
